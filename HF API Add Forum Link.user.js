@@ -5,8 +5,8 @@
 // @description  Add a forum link to the API subforum on the API pages in the user control panel.
 // @author       James
 // @include      https://hackforums.net/usercp.php?action=api*
-// @updateURL    https://github.com/moodiest/Userscripts/raw/master/
-// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Forum%20Link.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Forum%20Link.user.js
 // @grant        none
 // ==/UserScript==
 //
