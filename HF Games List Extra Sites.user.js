@@ -10,9 +10,12 @@
 // @grant        none
 // ==/UserScript==
 //
-// ----- CHANGE LOG -----
+// ------- CHANGE LOG --------
 // Added Lynx's raffle site.
-// ----------------------
+// ----- SUPPORTED SITES -----
+// Lynx's Raffle Site - sociopath.cc/gamble
+// ---------------------------
+
 
 (function() {
     'use strict';
@@ -20,6 +23,8 @@
     let panelLinks = document.querySelector(".panel_links");
     let gameList = panelLinks.querySelectorAll(".button-dropdown")[2];
     let gameListContent = gameList.querySelectorAll(".dropdown-menu")[0];
+
+    // Lynx's Raffle Site
     $(gameListContent).append("<li style=\"display: block; padding: 8px 0px;\"><a href=\"https://sociopath.cc/gamble/\" class=\"usercp\" title=\"Lynx's Raffle\"><i class=\"fa fa-ticket fa-lg\" aria-hidden=\"true\"></i><span style=\"font-size: 15px; color: #efefef;\">Lynx's Raffle</span></a></li>");
 
 })();
