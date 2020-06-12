@@ -6,8 +6,8 @@
 // @author       James
 // @include      https://hackforums.net/usercp.php?action=api*
 // @include      https://hackforums.net/forumdisplay.php?fid=375
-// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Forum%20Link.user.js
-// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Forum%20Link.user.js
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Links.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20API%20Add%20Links.user.js
 // @grant        none
 // ==/UserScript==
 //
