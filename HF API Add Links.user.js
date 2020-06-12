@@ -2,7 +2,7 @@
 // @name         HF API Add Links
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Add links to the API control panel in the subforum and a subforum link in the api control panel.
+// @description  Add links to the API control panel in the subforum and a subforum link in the API control panel.
 // @author       James
 // @include      https://hackforums.net/usercp.php?action=api*
 // @include      https://hackforums.net/forumdisplay.php?fid=375
