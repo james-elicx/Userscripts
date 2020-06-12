@@ -8,7 +8,6 @@
 // @include      https://hackforums.net/forumdisplay.php?*
 // @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Anti-Caps%20Lock.user.js
 // @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Anti-Caps%20Lock.user.js
-// @match        https://*.hackforums.net/*
 // @grant        none
 // ==/UserScript==
 //
