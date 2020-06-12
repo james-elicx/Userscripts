@@ -4,8 +4,8 @@
 // @version      0.1
 // @description  Add extra sites to the games list
 // @author       James
-// @updateURL    https://github.com/moodiest/Userscripts
-// @downloadURL  https://github.com/moodiest/Userscripts
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Games%20List%20Extra%20Sites.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Games%20List%20Extra%20Sites.user.js
 // @match        https://*.hackforums.net/*
 // @grant        none
 // ==/UserScript==
