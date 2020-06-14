@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         HF tBlock Revived
 // @author       James, Mr. Trvp
-// @description  This userscript blacklists unwanted threads and sections from ever being shown. Revived and updated by James for the current HF and originally by Mr. Trvp.
+// @description  Blacklists unwanted threads and sections from ever being shown. Revived and updated by James for the current HF and originally by Mr. Trvp.
 // @include      *hackforums.net/*
 // @version      0.1
-// @updateURL    https://github.com/moodiest/Userscripts/raw/master/
-// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // @grant        GM_getValue
