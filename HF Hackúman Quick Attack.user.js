@@ -5,8 +5,8 @@
 // @description  Attack a hackúman without having to go through the popup menu.
 // @author       James
 // @include      https://hackforums.net/hackuman.php*
-// @updateURL
-// @downloadURL
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Hack%C3%BAman%20Quick%20Attack.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Hack%C3%BAman%20Quick%20Attack.user.js
 // @require      https://userscripts-mirror.org/scripts/source/107941.user.js
 // @grant        GM_setValue
 // @grant        GM_getValue
