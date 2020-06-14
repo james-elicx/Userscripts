@@ -5,8 +5,8 @@
 // @description  Automatically full screen the convo room.
 // @author       James
 // @include      https://hackforums.net/convo.php*
-// @updateURL    https://github.com/moodiest/Userscripts/raw/master/
-// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Auto-Full%20Screen.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Auto-Full%20Screen.user.js
 // @grant        none
 // ==/UserScript==
 //
