@@ -3,7 +3,7 @@
 // @author       James, Mr. Trvp
 // @description  Blacklists unwanted threads and sections from ever being shown. Revived and updated by James for the current HF and originally by Mr. Trvp.
 // @include      *hackforums.net/*
-// @version      0.1
+// @version      0.0.1
 // @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
 // @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
 // @grant        GM_addStyle
@@ -76,10 +76,25 @@ function initializeConfig() {
 function addBlockedToNavigation() {
     log('Adding blocked link to links...');
 
-    //var settingsHtml = ' | <a href="http://hackforums.net/tBlock.php" id="tBlock_blocked">Blocked</a>';
-    let settingsHtml = `<li><a href="http://hackforums.net/tBlock.php" id="tBlock_blocked" title="tBlock Revived" data-tag="tBlock Revived" data-tooltip="tBlock Revived"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></a></li>`
 
-    $(document.querySelector(`ul.menu.user_links`)).prepend(settingsHtml);
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+    if (toggleTopbarSettingsBtnCurrVal) {
+        let settingsHtml = `<li><a href="http://hackforums.net/tBlock.php" id="tBlock_blocked" title="tBlock Revived" data-tag="tBlock Revived" data-tooltip="tBlock Revived"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></a></li>`
+
+        $(document.querySelector(`ul.menu.user_links`)).prepend(settingsHtml);
+    }
+
+    try {
+        let panelLinks = document.querySelector(".panel_links");
+        let userOptionsList = panelLinks.querySelectorAll(".button-dropdown")[0];
+        let userOptionsListContent = userOptionsList.querySelectorAll(".dropdown-menu")[0];
+
+        // Lynx's Raffle Site
+        $(userOptionsListContent).append(`<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/tBlock.php" class="usercp" title="tBlock Revived"><i class="fa fa-ban fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">tBlock Revived</span></a></li>`);
+    }
+    catch (e) {
+        return;
+    }
 }
 
 // End settings //
@@ -112,42 +127,6 @@ function applyForumMods() {
 }
 
 function addBlacklistLink(term) {
-    /*if (term === 'search')
-        return;
-
-    var href, id;
-    if (term !== 'user') {
-        if ($('a.bitButton').length === 0)
-            return;
-
-        href = $($('a.bitButton')[0]).attr('href');
-        id = href.substring(href.indexOf('?') + 5, href.length);
-    } else {
-        href = $('a[href*="username_history"]').attr('href');
-        id = href.substring(href.indexOf('?') + 31, href.length);
-        log(id);
-    }
-
-    log('Handing ' + term + ' blacklist label..');
-
-    var blacklistHtml = '&nbsp' +
-        '<small>' +
-            '<a href="javascript:void(0);" id="blacklister">[{blacklistTextL}]</a>' +
-        '</small>';
-
-    var items = GM_SuperValue.get(term + 's', {});
-
-    var blacklisted = (id in items);
-    var blacklistTerm = getBlacklistTerm(blacklisted);
-
-    blacklistHtml = blacklistHtml.replace('{term}', term);
-    blacklistHtml = blacklistHtml.replace('{blacklistTerm}', blacklistTerm);
-    blacklistHtml = blacklistHtml.replace('{blacklistTextL}', blacklistTerm.toLowerCase());
-
-    $('#citeButton').append(blacklistHtml); //,navigation
-    $('#blacklister').on('click', function (event) {
-        addToBlacklistCallback(term, blacklistTerm.toLowerCase(), id);
-    });*/
     if (term === 'search') {
         return;
     }
@@ -582,6 +561,8 @@ function initializetBlockPage() {
 
     $(".sfThreadBlacklistToggle").on('click', toggleSfThreadClick);
 
+    $(".topbarSettingsButtonToggle").on('click', toggleTopbarSettingsButtonToggleClick);
+
     $('.trash_icon').on('click', deleteItemCallback);
 }
 
@@ -597,6 +578,25 @@ function getToggleSfThreadText() {
     let toggleSfThreadCurrVal = GM_SuperValue.get("toggleSfThreadTextBool", false);
 
     if (toggleSfThreadCurrVal) {
+        return "Disable";
+    }
+    else {
+        return "Enable";
+    }
+}
+
+function toggleTopbarSettingsButtonToggleClick() {
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+
+    GM_SuperValue.set("toggleTopbarSettingsBtnTextBool", !toggleTopbarSettingsBtnCurrVal)
+
+    document.querySelector("a.topbarSettingsButtonToggle").text = `${getToggleTopbarSettingsButtonText()} blacklist button for all threads in subforum view. (Click Here)`;
+}
+
+function getToggleTopbarSettingsButtonText() {
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+
+    if (toggleTopbarSettingsBtnCurrVal) {
         return "Disable";
     }
     else {

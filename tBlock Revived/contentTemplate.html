@@ -1,22 +1,33 @@
 <div id="container">
     <hr class="hidden">
+    <div id="header">
+        <div id="logo" style="position: relative;">
+            <div id="notify-container" style="display: none;">
+                <div id="notify-dragger" class="notify-header" style="background-color: #454545;"><span class="notify-header-heading" style="font-size: 16px;">Notifications</span><div class="float_right"><a href="notify.php"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a><a href="javascript:void(0);" onclick="Notify.processIconClick();" style="margin-left: 15px;"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div></div>
+                <div id="notify-notifications-container">
+                    <i class="fa fa-spinner fa-spin fa-3x" style=" color: white; position: absolute; top: calc(50% - 40px); left: calc(50% - 25px); "></i>
+                </div>
+            </div>
+            <div class="wrapper">
+                <a href="https://hackforums.net/index.php" class="logo-a"><img src="https://hackforums.net/images/logo/logo-circuit-green.gif" class="logo-img" title="Packets, Posts, and Punks" alt="Hackforums"></a>
+            </div>
+        </div>
+    </div>
     <div id="content">
         <br>
-        <!-- start: nav -->
         <div class="navigation">
-            <!-- start: nav_bit -->
-            <a href="http://www.hackforums.net/index.php">
+            <a href="https://www.hackforums.net/index.php">
                 Hack Forums
             </a>
-            <!-- start: nav_sep --> / <!-- end: nav_sep -->
-            <!-- end: nav_bit -->
-            <!-- start: nav_bit_active -->
             <span class="active">
                 Blocked
             </span>
-            <!-- end: nav_bit_active -->
         </div>
-        <!-- end: nav -->
+        <br>
+        <div>
+            <a href="javascript:void(0);" class="sfThreadBlacklistToggle">{getToggleSfThreadText} blacklist button for all threads in subforum view. (Click Here)</a>
+            <a href="javascript:void(0);" class="topbarSettingsButtonToggle">{getToggleTopbarSettingsButtonText} top navbar dashboard button. (Click Here)</a>
+        </div>
         <br>
         <div class="quick_keys">
             <table border="0" cellspacing="1" cellpadding="4" class="tborder">
@@ -26,15 +37,11 @@
                             <strong>Blocked</strong>
                         </td>
                     </tr>
-                    <!-- start: blocked_forums --> {forums} <!-- end: blocked_forums -->
-                    <!-- start: blocked_threads --> {threads} <!-- end: blocked_threads -->
-                    <!-- start: blocked_users --> {users} <!-- end: blocked_users -->
+                    <!-- Start: blocked_forums --> {forums} <!-- End: blocked_forums -->
+                    <!-- Start: blocked_threads --> {threads} <!-- End: blocked_threads -->
+                    <!-- Start: blocked_users --> {users} <!-- End: blocked_users -->
                 </tbody>
             </table>
-        </div>
-        <br>
-        <div>
-            <a href="javascript:void(0);" class="sfThreadBlacklistToggle">{getToggleSfThreadText} blacklist button for all threads in subforum view. (Click Here)</a>
         </div>
     </div>
   </div>
