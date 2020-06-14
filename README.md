@@ -10,3 +10,5 @@
     * Add links to the API control panel in the subforum and a subforum link in the API control panel.
   * **HF Hackúman Quick Attack - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Hack%C3%BAman%20Quick%20Attack.user.js)**
     * Attack a hackúman without having to go through the popup menu.
+  * **HF Convo Auto-Full Screen - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Auto-Full%20Screen.user.js)**
+    * Automatically full screen the convo room.
