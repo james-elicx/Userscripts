@@ -3,7 +3,7 @@
 // @author       James, Mr. Trvp
 // @description  Blacklists unwanted threads and sections from ever being shown. Revived and updated by James for the current HF and originally by Mr. Trvp.
 // @include      *hackforums.net/*
-// @version      0.0.1
+// @version      0.0.2
 // @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
 // @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js
 // @grant        GM_addStyle
@@ -77,7 +77,7 @@ function addBlockedToNavigation() {
     log('Adding blocked link to links...');
 
 
-    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", false);
     if (toggleTopbarSettingsBtnCurrVal) {
         let settingsHtml = `<li><a href="http://hackforums.net/tBlock.php" id="tBlock_blocked" title="tBlock Revived" data-tag="tBlock Revived" data-tooltip="tBlock Revived"><i class="fa fa-ban fa-lg" aria-hidden="true"></i></a></li>`
 
@@ -559,9 +559,9 @@ function initializetBlockPage() {
     document.head.innerHTML += '<link type="text/css" rel="stylesheet" href="https://hackforums.net/fonts/fa/css/all.min.css">';
     document.body.innerHTML = createContent();
 
-    $(".sfThreadBlacklistToggle").on('click', toggleSfThreadClick);
+    $("a.sfThreadBlacklistToggle").on('click', toggleSfThreadClick);
 
-    $(".topbarSettingsButtonToggle").on('click', toggleTopbarSettingsButtonToggleClick);
+    $("a.topbarSettingsButtonToggle").on('click', toggleTopbarSettingsButtonToggleClick);
 
     $('.trash_icon').on('click', deleteItemCallback);
 }
@@ -586,15 +586,15 @@ function getToggleSfThreadText() {
 }
 
 function toggleTopbarSettingsButtonToggleClick() {
-    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", false);
 
     GM_SuperValue.set("toggleTopbarSettingsBtnTextBool", !toggleTopbarSettingsBtnCurrVal)
 
-    document.querySelector("a.topbarSettingsButtonToggle").text = `${getToggleTopbarSettingsButtonText()} blacklist button for all threads in subforum view. (Click Here)`;
+    document.querySelector("a.topbarSettingsButtonToggle").text = `${getToggleTopbarSettingsButtonText()} top navbar dashboard button. (Click Here)`;
 }
 
 function getToggleTopbarSettingsButtonText() {
-    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", true);
+    let toggleTopbarSettingsBtnCurrVal = GM_SuperValue.get("toggleTopbarSettingsBtnTextBool", false);
 
     if (toggleTopbarSettingsBtnCurrVal) {
         return "Disable";
@@ -638,6 +638,7 @@ function createContent() {
     content = content.replace('{threads}', createSection('tid'));
     content = content.replace('{users}', createSection('uid'));
     content = content.replace('{getToggleSfThreadText}', getToggleSfThreadText());
+    content = content.replace('{getToggleTopbarSettingsButtonText}', getToggleTopbarSettingsButtonText());
 
     return content;
 }
