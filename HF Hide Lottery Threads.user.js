@@ -1,15 +1,12 @@
 // ==UserScript==
 // @name         HF Hide Lottery Threads
 // @author       James
-// @description  Hide threads for lotteries in the HF Byte Games section.
+// @description  Hide threads for lotteries in the HF Byte Games section. Based off of tBlock Revived.
 // @include      *hackforums.net/forumdisplay.php?fid=415*
 // @version      0.0.1
-// @updateURL    https://github.com/moodiest/Userscripts/raw/master/
-// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Hide%20Lottery%20Threads.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Hide%20Lottery%20Threads.user.js
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js
-// @resource     ContentTemplate https://raw.githubusercontent.com/moodiest/Userscripts/master/tBlock%20Revived/contentTemplate.html
-// @resource     SectionTemplate https://raw.githubusercontent.com/moodiest/Userscripts/master/tBlock%20Revived/sectionTemplate.html
-// @resource     RowTemplate https://raw.githubusercontent.com/moodiest/Userscripts/master/tBlock%20Revived/rowTemplate.html
 // ==/UserScript==
 //
 // ------- CHANGE LOG -------

@@ -14,3 +14,5 @@
     * Attack a hackúman without having to go through the popup menu.
   * **HF Convo Auto-Full Screen - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Auto-Full%20Screen.user.js)**
     * Automatically full screen the convo room.
+  * **HF Hide Lottery Threads - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Hide%20Lottery%20Threads.user.js)**
+    * Hide threads for lotteries in the HF Byte Games section. Based off of [tBlock Revived](https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js).
