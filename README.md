@@ -2,6 +2,8 @@
  
 ### Scripts
 * The following are userscripts for HackForums.
+  * **HF Professor Elias' Laboratory - Hackúman Enhanced - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Professor%20Elias'%20Laboratory%20-%20Hack%C3%BAman%20Enhanced.user.js)**
+    * Professor Elias' Laboratory researches new and innovative ways to take care of and enhance a Hackúman's natural abilities.
   * **HF tBlock Revived - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js)**
     * Blacklists unwanted threads and sections from ever being shown. Revived and updated by James for the current HF and originally by Mr. Trvp.
   * **HF Anti-Caps Lock - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Anti-Caps%20Lock.user.js)**
@@ -16,3 +18,4 @@
     * Automatically full screen the convo room.
   * **HF Hide Lottery Threads - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Hide%20Lottery%20Threads.user.js)**
     * Hide threads for lotteries in the HF Byte Games section. Based off of [tBlock Revived](https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js).
+	
