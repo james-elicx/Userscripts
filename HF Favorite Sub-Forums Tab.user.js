@@ -16,7 +16,7 @@
 
 var Favorites = {
     init: function () {
-        if (document.URL.contains(`forumdisplay.php`)) {
+        if (document.URL.includes(`forumdisplay.php`)) {
             Favorites.addFavBtn();
         }
         else if (document.URL == `https://hackforums.net/index.php` || document.URL == `https://hackforums.net/` || document.URL == `https://hackforums.net/#`) {
