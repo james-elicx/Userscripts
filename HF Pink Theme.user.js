@@ -27,7 +27,7 @@ body {
     background: rgb(11 5 11 / 70%) !important;
 }
 
-.thead, .shadetabs li a.selected, .pagination .pagination_current, .quickthread_button {
+.thead, .shadetabs li a.selected, .pagination .pagination_current, .quickthread_button, .nav_con_active {
     background: #bd4aa7 !important;
 }
 
