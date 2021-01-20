@@ -18,4 +18,6 @@
     * Automatically full screen the convo room.
   * **HF Hide Lottery Threads - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Hide%20Lottery%20Threads.user.js)**
     * Hide threads for lotteries in the HF Byte Games section. Based off of [tBlock Revived](https://github.com/moodiest/Userscripts/raw/master/HF%20tBlock%20Revived.user.js).
+  * **HF: Favorite Sub-Forums Tab - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Favorite%20Sub-Forums%20Tab.user.js)**
+    * Add a favorite sub-forums tab and section to the home page.
 	
