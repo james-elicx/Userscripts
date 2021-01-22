@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HF: Pink Theme
 // @description  Pink theme for Hack Forums.
-// @version      0.0.3
+// @version      0.0.4
 // @author       James
 // @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Pink%20Theme.user.js
 // @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Pink%20Theme.user.js
@@ -27,7 +27,7 @@ body {
     background: rgb(11 5 11 / 70%) !important;
 }
 
-.thead, .shadetabs li a.selected, .pagination .pagination_current, .quickthread_button, .nav_con_active, .nav_con_active span {
+.thead, .shadetabs li a.selected, .pagination .pagination_current, .quickthread_button, .nav_con_active, .nav_con_active span, span.nav_con_active:after {
     background: #bd4aa7 !important;
 }
 
