@@ -22,3 +22,5 @@
     * Add a favorite sub-forums tab and section to the home page.
   * **HF: Pink Theme - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Pink%20Theme.user.js)**
     * Pink theme for Hack Forums.
+  * **HF: Convo Tag Notification Sound - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Tag%20Notification%20Sound.user.js)**
+    * Plays the convo notification sound when you are tagged in the convo room.
