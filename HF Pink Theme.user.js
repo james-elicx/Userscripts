@@ -13,7 +13,7 @@
 
 var Pink = {
     init: function () {
-        if (!document.URL.includes(`attachment`) && document.URL.includes(`.php`)) {
+        if (!document.URL.includes(`attachment`)) {
             Pink.addCSS();
             Pink.addLogo();
         }
