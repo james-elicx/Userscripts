@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HF: Pink Theme
 // @description  Pink theme for Hack Forums.
-// @version      0.0.5
+// @version      0.0.6
 // @author       James
 // @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Pink%20Theme.user.js
 // @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Pink%20Theme.user.js
@@ -13,8 +13,10 @@
 
 var Pink = {
     init: function () {
-        Pink.addCSS();
-        Pink.addLogo();
+        if (!document.URL.includes(`attachment`) && document.URL.includes(`.php`)) {
+            Pink.addCSS();
+            Pink.addLogo();
+        }
     },
 
     addCSS: function () {
