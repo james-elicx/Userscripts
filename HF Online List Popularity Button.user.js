@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         HF: Online List Popularity Button
 // @version      1.0.1
-// @description  Add popularity buttons on the online list.
+// @description  Add popularity buttons to the online users list.
 // @author       James
 // @include      https://hackforums.net/online.php?action=list&sort=group
-// @updateURL
-// @downloadURL
+// @updateURL    https://github.com/moodiest/Userscripts/raw/master/HF%20Online%20List%20Popularity%20Button.user.js
+// @downloadURL  https://github.com/moodiest/Userscripts/raw/master/HF%20Online%20List%20Popularity%20Button.user.js
 // @iconURL      https://github.com/moodiest/Userscripts/raw/master/icon.jpg
 // @require      https://userscripts-mirror.org/scripts/source/107941.user.js
 // @grant        GM_setValue

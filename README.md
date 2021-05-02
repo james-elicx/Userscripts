@@ -24,3 +24,5 @@
     * Pink theme for Hack Forums.
   * **HF: Convo Tag Notification Sound - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Convo%20Tag%20Notification%20Sound.user.js)**
     * Plays the convo notification sound when you are tagged in the convo room.
+  * **HF: Online List Popularity Button - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Online%20List%20Popularity%20Button.user.js)**
+    * Add popularity buttons to the online users list.
