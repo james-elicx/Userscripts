@@ -26,3 +26,5 @@
     * Plays the convo notification sound when you are tagged in the convo room.
   * **HF: Online List Popularity Button - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Online%20List%20Popularity%20Button.user.js)**
     * Add popularity buttons to the online users list.
+  * **HF Wiki: Generate Article to Clipboard - [Install](https://github.com/moodiest/Userscripts/raw/master/HF%20Wiki%20Generate%20Article%20to%20Clipboard.user.js)**
+    * Generate basic articles to your clipboard for the HF Wiki.
