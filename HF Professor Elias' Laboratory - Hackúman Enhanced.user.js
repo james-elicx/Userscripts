@@ -221,7 +221,7 @@ function getToggleText (value) {
 
 function modalSelectDefaultHumConfigure (labItemId) {
 	//log(`t`);
-	let hid = 3196;
+	let hid = 11501;
 	let mon = $('.hum-mon-container-' + hid);
 
 	let data = {
@@ -347,7 +347,7 @@ ${humInfo.progressBar.html()}
 
 function modalToggleForHumConfigure (labItemId) {
 	//log(`t`);
-	let hid = 3196;
+	let hid = 11501;
 	let mon = $('.hum-mon-container-' + hid);
 
 	let data = {
